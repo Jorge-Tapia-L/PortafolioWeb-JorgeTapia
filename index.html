@@ -2,558 +2,570 @@
 <html lang="es">
 
 <head>
-
     <meta charset="UTF-8">
-    <title>Jorge Tapia | Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jorge Tapia | Full Stack & Administrador Web</title>
+    <meta name="description"
+        content="Jorge Tapia Limo — Desarrollador Full Stack y Administrador Web en Lima, Perú. Desarrollo, despliegue, mantenimiento y seguridad de sitios web.">
+    <meta property="og:title" content="Jorge Tapia | Full Stack & Administrador Web">
+    <meta property="og:description"
+        content="Desarrollo y administro mis propias webs. Mi visión: administrar y hacer crecer las webs de otros.">
+    <meta property="og:image" content="img/foto.jpeg">
+    <meta name="theme-color" content="#0b1120">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%233b82f6'/><text x='50' y='66' font-size='48' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'>JT</text></svg>">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
-
+    <script>document.documentElement.classList.add("js");</script>
 </head>
-
 
 <body>
 
-    <div id="particles-js"></div>
+    <div id="particles-js" aria-hidden="true"></div>
 
+    <!-- ================= HEADER ================= -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="#inicio" class="logo">JT<span>.</span></a>
 
-    <header>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false"
+                aria-controls="nav">
+                <i class="fa-solid fa-bars"></i>
+            </button>
 
-        <h1>Hola! Soy Jorge!</h1>
-
-        <nav>
-
-            <a href="#inicio">Inicio</a>
-            <a href="#sobre">Sobre mi</a>
-            <a href="#skills">Skills</a>
-            <a href="#cv">Curriculum</a>
-            <a href="#proyectos">Proyectos</a>
-        </nav>
-
+            <nav class="nav" id="nav">
+                <a href="#inicio">Inicio</a>
+                <a href="#sobre">Sobre mí</a>
+                <a href="#admin">Administración web</a>
+                <a href="#skills">Skills</a>
+                <a href="#cv">Trayectoria</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto" class="nav-cta">Contacto</a>
+            </nav>
+        </div>
     </header>
 
+    <main>
+
+        <!-- ================= HERO ================= -->
+        <section id="inicio" class="hero">
+            <div class="container hero-grid">
+
+                <div class="hero-text reveal">
+                    <span class="badge"><span class="dot"></span> Disponible para prácticas y proyectos</span>
+
+                    <h1>Hola, soy <span class="grad">Jorge Tapia</span></h1>
+
+                    <p class="hero-role">Desarrollador Full Stack &amp; Administrador Web</p>
+
+                    <p class="hero-desc">
+                        Construyo, despliego y administro mis propias webs: desde el código hasta el hosting,
+                        el mantenimiento y la seguridad. Mi visión es llevar esa experiencia a
+                        <strong>administrar y hacer crecer las webs de otros negocios</strong>.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#proyectos" class="btn btn-primary">Ver proyectos <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#contacto" class="btn btn-ghost">Contáctame</a>
+                    </div>
+
+                    <div class="socials">
+                        <a href="https://github.com/Jorge-Tapia-L" target="_blank" rel="noopener"
+                            aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://wa.me/51978612932" target="_blank" rel="noopener" aria-label="WhatsApp"><i
+                                class="fa-brands fa-whatsapp"></i></a>
+                        <a href="mailto:jorgetapialimo@gmail.com" aria-label="Email"><i
+                                class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="photo-wrap">
+                        <img src="img/foto.jpeg" alt="Foto de Jorge Tapia Limo" class="photo">
+                        <div class="float-card fc-1">
+                            <i class="fa-solid fa-server"></i>
+                            <div><strong>Webs en línea</strong><small>Administradas por mí</small></div>
+                        </div>
+                        <div class="float-card fc-2">
+                            <i class="fa-solid fa-code"></i>
+                            <div><strong>Full Stack</strong><small>Node · Laravel · React</small></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="container">
+                <div class="stats reveal">
+                    <div class="stat"><strong>9no</strong><span>ciclo Ing. de Sistemas</span></div>
+                    <div class="stat"><strong>4+</strong><span>proyectos web</span></div>
+                    <div class="stat"><strong>2022</strong><span>freelance desde</span></div>
+                    <div class="stat"><strong>🇵🇪 🇦🇷</strong><span>formación internacional</span></div>
+                </div>
+            </div>
+        </section>
 
 
-    <!-- ================= INICIO ================= -->
+        <!-- ================= SOBRE MI ================= -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">01 · Sobre mí</span>
+                    <h2>Del código al servidor, <span class="grad">de punta a punta</span></h2>
+                </div>
 
-    <section id="inicio">
+                <div class="about-grid">
+                    <div class="about-text reveal">
+                        <p>
+                            Soy estudiante de Ingeniería de Sistemas (9no ciclo) en la Universidad César Vallejo,
+                            con un intercambio en Ingeniería de Software en la UNDAV (Argentina) enfocado en
+                            ciberseguridad y calidad de software.
+                        </p>
+                        <p>
+                            He desarrollado sistemas web, APIs y soluciones para la gestión de datos, clientes e
+                            inventarios con JavaScript, Node.js, PHP, Laravel, React y bases de datos SQL. Además,
+                            <strong>administro mis propias webs</strong>: las publico, les doy mantenimiento y
+                            me encargo de que estén siempre en línea.
+                        </p>
+                        <p>
+                            Me caracterizo por mi disciplina, aprendizaje constante y capacidad de adaptación.
+                            Busco integrarme a un equipo donde pueda aportar valor y crecer como profesional.
+                        </p>
 
-        <div class="card">
+                        <ul class="info-list">
+                            <li><i class="fa-solid fa-location-dot"></i> Lima, Perú</li>
+                            <li><i class="fa-solid fa-envelope"></i> <a
+                                    href="mailto:jorgetapialimo@gmail.com">jorgetapialimo@gmail.com</a></li>
+                            <li><i class="fa-brands fa-whatsapp"></i> <a href="https://wa.me/51978612932"
+                                    target="_blank" rel="noopener">+51 978 612 932</a></li>
+                            <li><i class="fa-solid fa-briefcase"></i> Estudiante · En búsqueda de prácticas</li>
+                        </ul>
+                    </div>
 
-            <img src="img/foto.jpeg" class="foto">
+                    <div class="interests reveal">
+                        <h3>Intereses</h3>
+                        <div class="interest-grid">
+                            <div class="interest"><i class="fa-solid fa-code"></i><span>Programación</span></div>
+                            <div class="interest"><i class="fa-solid fa-server"></i><span>Administración web</span>
+                            </div>
+                            <div class="interest"><i class="fa-solid fa-database"></i><span>Bases de datos</span>
+                            </div>
+                            <div class="interest"><i class="fa-solid fa-shield-halved"></i><span>Ciberseguridad</span>
+                            </div>
+                            <div class="interest"><i class="fa-solid fa-music"></i><span>DJ / Producción
+                                    musical</span></div>
+                            <div class="interest"><i class="fa-solid fa-person-swimming"></i><span>Natación</span>
+                            </div>
+                            <div class="interest"><i class="fa-solid fa-gamepad"></i><span>Videojuegos</span></div>
+                            <div class="interest"><i class="fa-solid fa-laptop-code"></i><span>Web Dev</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-            <h2>Jorge Tapia Limo.</h2>
 
-            <p>
-                Desarrollador Full Stack en formación, estudiante de Ingeniería de Sistemas (9no ciclo),
-                con experiencia en desarrollo de sistemas web, APIs y automatización.
-                He desarrollado soluciones reales para gestión de datos, clientes e inventarios
-                utilizando Node.js, Laravel, React y bases de datos SQL.
-            </p>
+        <!-- ================= ADMINISTRACION WEB ================= -->
+        <section id="admin" class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">02 · Administración web</span>
+                    <h2>Hoy administro mis webs. <span class="grad">Mañana, las tuyas.</span></h2>
+                    <p class="section-sub">
+                        No solo desarrollo sitios: me hago cargo de que funcionen, estén seguros y actualizados
+                        después del lanzamiento. Esto es lo que gestiono en cada web.
+                    </p>
+                </div>
 
+                <div class="services">
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                        <h3>Despliegue y hosting</h3>
+                        <p>Publicación de sitios, configuración de hosting, dominios y DNS para que la web esté en
+                            línea.</p>
+                    </article>
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Mantenimiento</h3>
+                        <p>Actualizaciones de contenido y código, corrección de errores y control de versiones con
+                            Git.</p>
+                    </article>
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3>Seguridad y respaldos</h3>
+                        <p>Buenas prácticas de ciberseguridad, certificados HTTPS y copias de seguridad para proteger
+                            la información.</p>
+                    </article>
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="fa-solid fa-gauge-high"></i></div>
+                        <h3>Rendimiento y SEO</h3>
+                        <p>Optimización de carga, diseño responsive y estructura para que la web se encuentre en
+                            Google.</p>
+                    </article>
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="fa-solid fa-database"></i></div>
+                        <h3>Datos y backend</h3>
+                        <p>Gestión de bases de datos MySQL y Firebase, APIs en Node.js y paneles administrativos.</p>
+                    </article>
+                    <article class="service reveal">
+                        <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+                        <h3>Soporte técnico</h3>
+                        <p>Experiencia en Help Desk: diagnóstico y solución rápida de incidencias, presencial o
+                            remoto.</p>
+                    </article>
+                </div>
+
+                <div class="admin-split">
+                    <div class="sites reveal">
+                        <h3><i class="fa-solid fa-globe"></i> Webs que administro</h3>
+                        <ul>
+                            <li>
+                                <div>
+                                    <strong>Portafolio personal</strong>
+                                    <small>Esta web · GitHub Pages</small>
+                                </div>
+                                <span class="status online">En línea</span>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Festival Peruano</strong>
+                                    <small>Venta de tickets · GitHub Pages</small>
+                                </div>
+                                <a class="status online" href="https://jorge-tapia-l.github.io/FestivalPeruano-Html-Scss-Js/"
+                                    target="_blank" rel="noopener">En línea <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Bienes Raíces</strong>
+                                    <small>Sitio inmobiliario · GitHub Pages</small>
+                                </div>
+                                <a class="status online" href="https://jorge-tapia-l.github.io/BieneRaices-Js-html-css/"
+                                    target="_blank" rel="noopener">En línea <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </li>
+                            <li>
+                                <div>
+                                    <strong>Gestión de Eventos · Inventario</strong>
+                                    <small>Sistemas web full stack</small>
+                                </div>
+                                <span class="status soon">Próximamente</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="vision reveal">
+                        <h3><i class="fa-solid fa-route"></i> Mi visión</h3>
+                        <ol class="roadmap">
+                            <li class="done">
+                                <span class="step">Hoy</span>
+                                <p>Desarrollo y administro mis propias webs de principio a fin.</p>
+                            </li>
+                            <li class="current">
+                                <span class="step">Siguiente paso</span>
+                                <p>Administrar webs de emprendedores y pequeños negocios: mantenimiento, seguridad y
+                                    soporte.</p>
+                            </li>
+                            <li>
+                                <span class="step">Futuro</span>
+                                <p>Gestionar un portafolio de sitios para empresas, con monitoreo, respaldos y mejora
+                                    continua.</p>
+                            </li>
+                        </ol>
+                        <a href="#contacto" class="btn btn-primary btn-block">¿Tienes una web? Hablemos <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+        <section id="skills" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">03 · Skills</span>
+                    <h2>Mi <span class="grad">stack</span> de trabajo</h2>
+                </div>
+
+                <div class="skill-groups">
+                    <div class="skill-group reveal">
+                        <h3><i class="fa-solid fa-palette"></i> Frontend</h3>
+                        <div class="chips">
+                            <span class="chip"><i class="fa-brands fa-html5"></i> HTML</span>
+                            <span class="chip"><i class="fa-brands fa-css3-alt"></i> CSS / SCSS</span>
+                            <span class="chip"><i class="fa-brands fa-js"></i> JavaScript</span>
+                            <span class="chip"><i class="fa-brands fa-react"></i> React</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3><i class="fa-solid fa-gears"></i> Backend</h3>
+                        <div class="chips">
+                            <span class="chip"><i class="fa-brands fa-node-js"></i> Node.js</span>
+                            <span class="chip"><i class="fa-brands fa-php"></i> PHP</span>
+                            <span class="chip"><i class="fa-brands fa-laravel"></i> Laravel</span>
+                            <span class="chip"><i class="fa-brands fa-java"></i> Java</span>
+                            <span class="chip"><i class="fa-brands fa-python"></i> Python</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3><i class="fa-solid fa-database"></i> Datos</h3>
+                        <div class="chips">
+                            <span class="chip"><i class="fa-solid fa-database"></i> MySQL</span>
+                            <span class="chip"><i class="fa-solid fa-fire"></i> Firebase</span>
+                            <span class="chip"><i class="fa-solid fa-chart-column"></i> Excel &amp; Power BI</span>
+                        </div>
+                    </div>
+                    <div class="skill-group reveal">
+                        <h3><i class="fa-solid fa-server"></i> Administración web</h3>
+                        <div class="chips">
+                            <span class="chip"><i class="fa-brands fa-git-alt"></i> Git</span>
+                            <span class="chip"><i class="fa-brands fa-github"></i> GitHub Pages</span>
+                            <span class="chip"><i class="fa-solid fa-network-wired"></i> Redes (Cisco)</span>
+                            <span class="chip"><i class="fa-solid fa-shield-halved"></i> Ciberseguridad</span>
+                            <span class="chip"><i class="fa-solid fa-headset"></i> Help Desk</span>
+                        </div>
+                    </div>
+                    <div class="skill-group skill-group-wide reveal">
+                        <h3><i class="fa-solid fa-user-group"></i> Habilidades blandas</h3>
+                        <div class="chips">
+                            <span class="chip chip-soft">Perseverancia</span>
+                            <span class="chip chip-soft">Comunicación</span>
+                            <span class="chip chip-soft">Liderazgo</span>
+                            <span class="chip chip-soft">Trabajo en equipo</span>
+                            <span class="chip chip-soft">Resolución de problemas</span>
+                            <span class="chip chip-soft">Creatividad</span>
+                            <span class="chip chip-soft">Responsabilidad</span>
+                            <span class="chip chip-soft">Resiliencia</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= CV ================= -->
+        <section id="cv" class="section section-alt">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">04 · Trayectoria</span>
+                    <h2>Educación y <span class="grad">experiencia</span></h2>
+                </div>
+
+                <div class="tabs reveal" role="tablist">
+                    <button id="btnEdu" class="tab active" role="tab" aria-selected="true"
+                        aria-controls="educacion"><i class="fa-solid fa-graduation-cap"></i> Educación</button>
+                    <button id="btnExp" class="tab" role="tab" aria-selected="false" aria-controls="experiencia"><i
+                            class="fa-solid fa-briefcase"></i> Experiencia</button>
+                </div>
+
+                <!-- EDUCACION -->
+                <div class="timeline tab-panel active" id="educacion" role="tabpanel">
+                    <div class="t-item">
+                        <span class="t-date">2021 — Actualidad</span>
+                        <h4>Ingeniería de Sistemas</h4>
+                        <span class="t-place">Universidad César Vallejo</span>
+                        <p>Desarrollo web, backend, bases de datos, software y redes. Certificaciones Cisco y
+                            proyectos tecnológicos.</p>
+                    </div>
+                    <div class="t-item">
+                        <span class="t-date">2024</span>
+                        <h4>Ingeniería de Software (Intercambio)</h4>
+                        <span class="t-place">UNDAV · Argentina</span>
+                        <p>Especialización en ciberseguridad y calidad de software. Experiencia internacional y
+                            networking.</p>
+                    </div>
+                    <div class="t-item">
+                        <span class="t-date">2022 — 2026</span>
+                        <h4>Capacitaciones (Udemy)</h4>
+                        <ul class="certs">
+                            <li>
+                                <span>Desarrollo Web Completo — HTML5, CSS3, JS, PHP, MySQL <em>(2026, en
+                                        curso)</em></span>
+                            </li>
+                            <li>
+                                <span>Python, Java y JavaScript <em>(2023)</em></span>
+                                <a href="https://www.udemy.com/certificate/UC-fc5c847e-4735-4751-92eb-97a94da7d653/"
+                                    target="_blank" rel="noopener" class="btn-cert">Ver certificado <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </li>
+                            <li>
+                                <span>Java Orientado a Objetos <em>(2023)</em></span>
+                                <a href="https://www.udemy.com/certificate/UC-c9843a10-d753-40a7-9416-1275bdc46106/"
+                                    target="_blank" rel="noopener" class="btn-cert">Ver certificado <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </li>
+                            <li>
+                                <span>JavaScript, HTML, CSS y Node.js <em>(2022)</em></span>
+                                <a href="https://www.udemy.com/certificate/UC-dabc686f-43f4-4c98-aeed-8cccef4d15a8/"
+                                    target="_blank" rel="noopener" class="btn-cert">Ver certificado <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="t-item">
+                        <span class="t-date">2023 — Actualidad</span>
+                        <h4>Certificado Help Desk</h4>
+                        <p>Certificación en soporte técnico obtenida al culminar la mitad de la carrera.</p>
+                    </div>
+                    <div class="t-item">
+                        <span class="t-date">2022 — 2024</span>
+                        <h4>Certificaciones Técnicas</h4>
+                        <p>Cisco Networking, Cybersecurity, Data Science e Inteligencia Artificial.</p>
+                    </div>
+                </div>
+
+                <!-- EXPERIENCIA -->
+                <div class="timeline tab-panel" id="experiencia" role="tabpanel">
+                    <div class="t-item">
+                        <span class="t-date">2022 — Actualidad</span>
+                        <h4>Desarrollador y Administrador Web Freelance</h4>
+                        <span class="t-place">Independiente</span>
+                        <p>Desarrollo de sistemas web, APIs en Node.js, chatbots y plataformas. Despliegue,
+                            mantenimiento y administración de mis propios sitios.</p>
+                    </div>
+                    <div class="t-item">
+                        <span class="t-date">2024</span>
+                        <h4>Help Desk / Soporte Técnico</h4>
+                        <span class="t-place">Grupo ISK</span>
+                        <p>Diagnóstico y reparación de equipos, soporte técnico presencial y remoto, mantenimiento de
+                            hardware y software.</p>
+                    </div>
+                    <div class="t-item">
+                        <span class="t-date">2023</span>
+                        <h4>Coordinador de Salón de Recepciones</h4>
+                        <span class="t-place">Tiffany's</span>
+                        <p>Recepción de clientes y venta de paquetes para bodas, quinceañeros y eventos corporativos.
+                        </p>
+                    </div>
+                    <div class="t-item">
+                        <span class="t-date">2021</span>
+                        <h4>Call Center / Atención al Cliente</h4>
+                        <span class="t-place">GSS</span>
+                        <p>Atención al cliente, resolución de consultas y manejo de sistemas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= PROYECTOS ================= -->
+        <section id="proyectos" class="section">
+            <div class="container">
+                <div class="section-head reveal">
+                    <span class="eyebrow">05 · Proyectos</span>
+                    <h2>Lo que he <span class="grad">construido</span></h2>
+                </div>
+
+                <div class="projects">
+                    <article class="project reveal">
+                        <div class="project-img">
+                            <img src="img/festtival.jpeg" alt="Web Festival Peruano" loading="lazy">
+                            <span class="status online">En línea</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Web Festival Peruano</h3>
+                            <p>Página web para la compra de tickets de un festival.</p>
+                            <div class="tags"><span>HTML</span><span>SCSS</span><span>JavaScript</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/Jorge-Tapia-L/FestivalPeruano-Html-Scss-Js"
+                                    target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+                                <a href="https://jorge-tapia-l.github.io/FestivalPeruano-Html-Scss-Js/"
+                                    target="_blank" rel="noopener" class="primary"><i class="fa-solid fa-globe"></i>
+                                    Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-img">
+                            <img src="img/bienesraices.jpeg" alt="Web Bienes Raíces" loading="lazy">
+                            <span class="status online">En línea</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Web para Bienes Raíces</h3>
+                            <p>Sitio web para el sector inmobiliario con catálogo de propiedades.</p>
+                            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="project-links">
+                                <a href="https://github.com/Jorge-Tapia-L/BieneRaices-Js-html-css" target="_blank"
+                                    rel="noopener"><i class="fa-brands fa-github"></i> Código</a>
+                                <a href="https://jorge-tapia-l.github.io/BieneRaices-Js-html-css/" target="_blank"
+                                    rel="noopener" class="primary"><i class="fa-solid fa-globe"></i> Demo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-img">
+                            <img src="img/appeventos.jpeg" alt="Sistema de Gestión de Eventos" loading="lazy">
+                            <span class="status soon">Próximamente</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Sistema de Gestión de Eventos</h3>
+                            <p>Gestión de eventos, clientes y pagos.</p>
+                            <div class="tags"><span>Node.js</span><span>MySQL</span><span>React</span></div>
+                            <div class="project-links">
+                                <span class="disabled"><i class="fa-solid fa-clock"></i> En desarrollo</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project reveal">
+                        <div class="project-img">
+                            <img src="img/inventario.jpeg" alt="Sistema de Inventario" loading="lazy">
+                            <span class="status soon">Próximamente</span>
+                        </div>
+                        <div class="project-body">
+                            <h3>Sistema de Inventario</h3>
+                            <p>Control de productos, clientes y ventas.</p>
+                            <div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span></div>
+                            <div class="project-links">
+                                <span class="disabled"><i class="fa-solid fa-clock"></i> En desarrollo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= CONTACTO ================= -->
+        <section id="contacto" class="section">
+            <div class="container">
+                <div class="contact-card reveal">
+                    <span class="eyebrow">06 · Contacto</span>
+                    <h2>¿Necesitas a alguien que <span class="grad">cuide tu web</span>?</h2>
+                    <p>Estoy disponible para prácticas, proyectos freelance y administración de sitios web.
+                        Escríbeme y conversemos.</p>
+                    <div class="contact-actions">
+                        <a href="mailto:jorgetapialimo@gmail.com" class="btn btn-primary"><i
+                                class="fa-solid fa-envelope"></i> jorgetapialimo@gmail.com</a>
+                        <a href="https://wa.me/51978612932" target="_blank" rel="noopener" class="btn btn-ghost"><i
+                                class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                        <a href="https://github.com/Jorge-Tapia-L" target="_blank" rel="noopener"
+                            class="btn btn-ghost"><i class="fa-brands fa-github"></i> GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year">2026</span> Jorge Tapia Limo · Desarrollado y administrado por mí 🚀</p>
         </div>
+    </footer>
 
-    </section>
-
-
-
-    <!-- ================= SOBRE MI ================= -->
-
-    <section id="sobre">
-
-        <h2>Sobre mí</h2>
-
-        <p class="descripcion">
-
-He desarrollado proyectos enfocados en la creación de sistemas web, APIs y soluciones para la gestión de datos, clientes e inventarios, aplicando tecnologías como JavaScript, Node.js, PHP, Laravel, React y bases de datos SQL.
-
-Me enfoco en construir soluciones funcionales y escalables, priorizando la eficiencia y la resolución de problemas reales. Me caracterizo por mi disciplina, aprendizaje constante y capacidad de adaptación en entornos tecnológicos.
-
-Actualmente busco integrarme a un equipo donde pueda aportar valor, asumir nuevos retos y seguir desarrollándome profesionalmente.
-
-        <div class="sobre-container">
-
-
-            <div class="datos">
-
-                <h3>Datos Personales</h3>
-
-                <p>WhatsApp: +51 978612932</p>
-                <p>Email: jorgetapialimo@gmail.com</p>
-                <p>Ciudad: Lima, Perú</p>
-                <p>Estado: Estudiante / En Busca de practicas</p>
-
-                <!--           <button class="btn-cv">Ver CV</button>  -->
-
-            </div>
-
-
-
-            <div class="intereses">
-
-                <h3>Intereses</h3>
-
-                <div class="icon-grid">
-
-                    <div class="icon-box">
-                        <i class="fa-solid fa-code"></i>
-                        <p>Programación</p>
-                    </div>
-
-                    <div class="icon-box">
-                        <i class="fa-solid fa-music"></i>
-                        <p>DJ / Produción Musical</p>
-                    </div>
-
-                    <div class="icon-box">
-                        <i class="fa-solid fa-database"></i>
-                        <p>Bases de datos</p>
-                    </div>
-
-                    <div class="icon-box">
-                        <i class="fa-solid fa-laptop"></i>
-                        <p>Web Dev</p>
-                    </div>
-
-                    <div class="icon-box">
-                        <i class="fa-solid fa-person-swimming"></i>
-                        <p>Natación</p>
-                    </div>
-
-                    <div class="icon-box">
-                        <i class="fa-solid fa-gamepad"></i>
-                        <p>Games</p>
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section id="skills">
-
-        <h2>Habilidades</h2>
-
-        <div class="skills-container">
-
-
-            <div class="col">
-
-                <h3>Hard Skills</h3>
-
-                <div class="skill-item">
-                    <span>Java</span>
-                    <div class="line">
-                        <div class="fill" style="width:55%" data-p="55%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>Python</span>
-                    <div class="line">
-                        <div class="fill" style="width:45%" data-p="45%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>JavaScript</span>
-                    <div class="line">
-                        <div class="fill" style="width:60%" data-p="60%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>PHP</span>
-                    <div class="line">
-                        <div class="fill" style="width:60%" data-p="60%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>Excel & PowerBI</span>
-                    <div class="line">
-                        <div class="fill" style="width:58%" data-p="58%"></div>
-                    </div>
-                </div>
-                <div class="skill-item">
-                    <span>Node.js</span>
-                    <div class="line">
-                        <div class="fill" style="width:75%" data-p="75%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>MySQL</span>
-                    <div class="line">
-                        <div class="fill" style="width:66%" data-p="66%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>HTML / CSS</span>
-                    <div class="line">
-                        <div class="fill" style="width:90%" data-p="90%"></div>
-                    </div>
-                </div>
-
-
-                <div class="skill-item">
-                    <span>React</span>
-                    <div class="line">
-                        <div class="fill" style="width:65%" data-p="65%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>FireBase</span>
-                    <div class="line">
-                        <div class="fill" style="width:50%" data-p="50%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>Git</span>
-                    <div class="line">
-                        <div class="fill" style="width:85%" data-p="85%"></div>
-                    </div>
-                </div>
-
-            </div>
-
-
-
-            <div class="col">
-
-                <h3>Soft Skills</h3>
-
-                <div class="skill-item">
-                    <span>Perserverancia</span>
-                    <div class="line">
-                        <div class="fill" style="width:90%" data-p="90%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>Comunicación</span>
-                    <div class="line">
-                        <div class="fill" style="width:85%" data-p="85%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>Liderazgo</span>
-                    <div class="line">
-                        <div class="fill" style="width:80%" data-p="80%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>Trabajo en equipo</span>
-                    <div class="line">
-                        <div class="fill" style="width:90%" data-p="90%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>Resolución de problemas</span>
-                    <div class="line">
-                        <div class="fill" style="width:88%" data-p="88%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>Creatividad</span>
-                    <div class="line">
-                        <div class="fill" style="width:100%" data-p="100%"></div>
-                    </div>
-                </div>
-
-                <div class="skill-item">
-                    <span>Responsabilidad</span>
-                    <div class="line">
-                        <div class="fill" style="width:92%" data-p="92%"></div>
-                    </div>
-                </div>
-
-
-                <div class="skill-item">
-                    <span>Resilencia</span>
-                    <div class="line">
-                        <div class="fill" style="width:95%" data-p="95%"></div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= CV ================= -->
-
-    <section id="cv">
-
-        <h2>Currículum</h2>
-
-        <!-- BOTONES -->
-        <div class="cv-toggle">
-            <button id="btnEdu" class="active">🎓 Educación</button>
-            <button id="btnExp">💼 Experiencia Laboral</button>
-        </div>
-
-        <div class="cv-container">
-
-            <!-- ================= EDUCACION ================= -->
-            <div class="cv-box active-box" id="educacion">
-
-                <h3>Educación</h3>
-
-                <div class="cv-item">
-                    <h4>Ingeniería de Sistemas</h4>
-                    <span>Universidad César Vallejo | 2021 - Actualidad</span>
-                    <p>
-                        Desarrollo web, backend, bases de datos, software y redes.
-                        Certificaciones Cisco y proyectos tecnológicos.
-                    </p>
-                </div>
-
-                <div class="cv-item">
-                    <h4>Ingeniería de Software (Intercambio)</h4>
-                    <span>UNDAV - Argentina | 2024</span>
-                    <p>
-                        Especialización en ciberseguridad y calidad de software.
-                        Experiencia internacional y networking.
-                    </p>
-                </div>
-
-                <!-- CAPACITACIONES -->
-                <div class="cv-item">
-
-                    <h4>Capacitaciones</h4>
-
-                    <span>2026 - Actualidad</span>
-                    <p>Udemy - Desarrollo Web Completo (HTML5, CSS3, JS, PHP, MySQL)</p>
-
-                    <br>
-
-                    <span>2023</span>
-                    <p>
-                        Udemy - Python, Java y JavaScript
-                        <a href="https://www.udemy.com/certificate/UC-fc5c847e-4735-4751-92eb-97a94da7d653/"
-                            target="_blank" class="btn-cert">
-                            Ver certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </p>
-
-                    <br>
-
-                    <span>2023</span>
-                    <p>
-                        Udemy - Java Orientado a Objetos
-                        <a href="https://www.udemy.com/certificate/UC-c9843a10-d753-40a7-9416-1275bdc46106/"
-                            target="_blank" class="btn-cert">
-                            Ver certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </p>
-
-                    <br>
-
-                    <span>2022</span>
-                    <p>
-                        Udemy - JavaScript, HTML, CSS y Node.js
-                        <a href="https://www.udemy.com/certificate/UC-dabc686f-43f4-4c98-aeed-8cccef4d15a8/"
-                            target="_blank" class="btn-cert">
-                            Ver certificado <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </p>
-
-                </div>
-
-                <!-- HELP DESK -->
-                <div class="cv-item">
-                    <h4>Certificado Help Desk</h4>
-                    <span>2023 - Actualidad</span>
-                    <p>
-                        Certificación obtenida al culminar la mitad de la carrera en soporte técnico.
-                    </p>
-                </div>
-
-                <div class="cv-item">
-                    <h4>Certificaciones Técnicas</h4>
-                    <span>2022 - 2024</span>
-                    <p>
-                        Cisco Networking, Cybersecurity, Data Science, AI.
-                    </p>
-                </div>
-
-            </div>
-
-
-            <!-- ================= EXPERIENCIA ================= -->
-            <div class="cv-box" id="experiencia">
-
-                <h3>Experiencia Laboral</h3>
-
-                <div class="cv-item">
-                    <h4>Help Desk / Soporte Técnico</h4>
-                    <span>Grupo ISK | 2024</span>
-                    <p>
-                        Diagnóstico, reparación de equipos, soporte técnico presencial/remoto
-                        y mantenimiento de hardware/software.
-                    </p>
-                </div>
-
-                <div class="cv-item">
-                    <h4>Coordinador Salón de recepeciones</h4>
-                    <span>Tiffanys | 2023</span>
-                    <p>
-                        Recepeciones de clientes, Venta de paquetes de Boda, Quinceaňos y Corporativos.
-                    </p>
-                </div>
-
-                <div class="cv-item">
-                    <h4>Call Center / Atención al Cliente</h4>
-                    <span>GSS | 2021</span>
-                    <p>
-                        Atención al cliente, resolución de consultas y manejo de sistemas.
-                    </p>
-                </div>
-
-                <div class="cv-item">
-                    <h4>Proyectos Freelance</h4>
-                    <span>2022 - Actualidad</span>
-                    <p>
-                        Desarrollo de sistemas web, APIs en Node.js, chatbots y plataformas.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-    <!-- ================= PROYECTOS ================= -->
-
-    <section id="proyectos">
-
-        <h2>Proyectos</h2>
-
-        <div class="grid">
-
-            <!-- PROYECTO 1 -->
-            <div class="proyecto">
-                <p>Proximamente</p> <br>
-                <img src="img/appeventos.jpeg" class="proyecto-img">
-
-                <h3>Sistema de Gestion de Eventos</h3>
-
-                <p>Sistema de gestión de eventos, clientes y pagos.</p>
-
-                <div class="proyecto-links">
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-github"></i> Código
-                    </a>
-                    <a href="#" target="_blank">
-                        <i class="fa-solid fa-globe"></i> Demo
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- PROYECTO 2 -->
-            <div class="proyecto">
-                <p>Proximamente</p> <br>
-                <img src="img/inventario.jpeg" class="proyecto-img">
-
-                <h3>Sistema Inventario</h3>
-
-                <p>Control de productos, clientes y ventas.</p>
-
-                <div class="proyecto-links">
-                    <a href="#" target="_blank">
-                        <i class="fa-brands fa-github"></i> Código
-                    </a>
-                    <a href="#" target="_blank">
-                        <i class="fa-solid fa-globe"></i> Demo
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- PROYECTO 3 -->
-            <div class="proyecto">
-                <p>Mirar Demo</p> <br>
-                <img src="img/festtival.jpeg" class="proyecto-img">
-
-                <h3>Web Festival Peruano</h3>
-
-                <p>Página web para compra de tickets</p>
-
-                <div class="proyecto-links">
-                    <a href="https://github.com/Jorge-Tapia-L/FestivalPeruano-Html-Scss-Js" target="_blank">
-                        <i class="fa-brands fa-github"></i> Código
-                    </a>
-                    <a href="https://jorge-tapia-l.github.io/FestivalPeruano-Html-Scss-Js/" target="_blank">
-                        <i class="fa-solid fa-globe"></i> Demo
-                    </a>
-                </div>
-
-            </div>
-
-            <!-- PROYECTO 4 -->
-            <div class="proyecto">
-                <p>Mirar Demo</p> <br>
-                <img src="img/bienesraices.jpeg" class="proyecto-img">
-
-                <h3>Pagina Web para sector Bienes Raices</h3>
-
-                <p>HTML + CSS + JS</p>
-
-                <div class="proyecto-links">
-                    <a href="https://github.com/Jorge-Tapia-L/BieneRaices-Js-html-css" target="_blank">
-                        <i class="fa-brands fa-github"></i> Código
-                    </a>
-                    <a href="https://jorge-tapia-l.github.io/BieneRaices-Js-html-css/" target="_blank">
-                        <i class="fa-solid fa-globe"></i> Demo
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= CONTACTO ================= -->
-
-    <!-- <section id="contacto">
-
-<h2>Contacto</h2>
-
-<p>Email: jorgetapialimo@gmail.com</p>
-
- </section>
-
-    -->
-
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="particles.js"></script>
     <script src="script.js"></script>
 
